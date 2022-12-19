@@ -1,0 +1,16 @@
+n = int(input())
+while n < 1 or n > 500000: 
+    n = int(input('valor invalido. insira outro valor: \n'))
+
+repostagens = []
+for i in range(n):
+    ir = (int(input()))
+    while ir < 0 or ir > 6000000:
+         ir = (int(input('valor invalido. insira outro valor: \n')))
+    repostagens.append(ir)
+
+repostagens.sort(reverse=True)
+fi = 0
+while repostagens[fi] > fi:
+    fi += 1
+print(fi)
